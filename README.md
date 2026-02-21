@@ -1,5 +1,9 @@
 # Loynova App – Wallet Feature
 
+## Download App
+
+📥 [Download the Production Android APK (app-release.apk)](releases/app-release.apk)
+
 ## Architecture
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for:
