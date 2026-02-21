@@ -2,7 +2,7 @@
 
 ## Download App
 
-📥 [Download the Production Android APK (app-release.apk)](releases)
+📥 [Download the Production Android APK (app-release.apk)](./releases/)
 
 ## Architecture
 
