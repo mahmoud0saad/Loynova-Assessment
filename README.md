@@ -8,6 +8,11 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for:
 - **Task 1.3** — Error handling approach (Either, typed failures, UI layers)
 
 
+## Code Review
+
+See [CODE_REVIEW.md](CODE_REVIEW.md) for analysis of all 4 code snippets plus the 5 performance
+optimization techniques (Snippet 5).
+
 ## State Management: BLoC
 
 The Wallet feature uses **BLoC (Business Logic Component)** for state management, consistent with the rest of the application. BLoC was chosen because:
@@ -91,8 +96,5 @@ flutter run -d chrome    # Web
 
 The initial route is set to `/wallet`. Navigate to "Transfer Points" via the FAB button.
 
-## Code Review
 
-See `CODE_REVIEW.md` for analysis of all 4 code snippets plus the 5 performance
-optimization techniques (Snippet 5).
 
