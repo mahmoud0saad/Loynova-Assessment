@@ -6,7 +6,6 @@ import 'package:injectable/injectable.dart';
 import 'package:loynova_app/core/helpers/app_debuger.dart';
 import 'package:loynova_app/core/network/auth_interceptor.dart';
 import 'package:loynova_app/core/network/network_helper.dart';
-import 'package:network_logger/network_logger.dart';
 
 import '../../core/network/api_strings.dart';
 import 'network_interface.dart';
@@ -130,7 +129,6 @@ class DioHelper implements BaseNetwork {
 
       dio.interceptors.clear();
       dio.interceptors.add(AuthInterceptor());
-      dio.interceptors.add(DioNetworkLogger());
 
       AppDebuger.log("After: ${dio.options.baseUrl}");
     } catch (e, stackTrace) {

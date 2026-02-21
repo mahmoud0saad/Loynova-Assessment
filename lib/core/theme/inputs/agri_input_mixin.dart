@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:loynova_app/core/helpers/extensions/gap_extensions.dart';
 import 'package:loynova_app/core/theme/app_colors.dart';
 import 'package:loynova_app/core/theme/typography/agri_text_theme.dart';
 
@@ -234,7 +233,7 @@ mixin AgriInput<T extends AgriBaseInput> on State<T> {
               ).body2.regular(color: getLabelColor()),
             ),
           ),
-        if (type == FormTextType.basic) 4.h.gap,
+        if (type == FormTextType.basic) SizedBox(height: 4.h),
         Stack(
           children: [
             Container(
@@ -322,7 +321,7 @@ mixin AgriInput<T extends AgriBaseInput> on State<T> {
           ],
         ),
         if (currentState == InputState.error) ...[
-          4.h.gap,
+          SizedBox(height: 4.h),
           Text(
             errorMessage ?? '',
             style: AgriTextTheme.of(context).small.med(color: AppColors.red900),
