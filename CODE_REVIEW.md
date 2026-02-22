@@ -121,7 +121,14 @@ class WalletScreen extends StatelessWidget {
             return ListView.builder(
               itemCount: state.displayedTransactions.length,
               itemBuilder: (context, index) {
-                return const _TransactionTile(); // see Snippet 3 fix
+                 return Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: const BoxDecoration(
+                    color:const Colors.white,
+                    boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 4)],
+                  ),
+                  child: Text(transactions[index].description),
+                );
               },
             );
           }
